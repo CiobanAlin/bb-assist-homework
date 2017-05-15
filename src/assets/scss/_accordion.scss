@@ -1,48 +1,73 @@
-/* Style the element that is used to open and close the accordion class */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    transition: 0.4s;
-    margin-bottom:10px;
+/* display */
+.accordion-content{
+  display:none;
+}
+.accordion-title {
+  display:flex;
 }
 
-/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-p.accordion.active, p.accordion:hover {
-    background-color: #ddd;
+/* width */
+.accordion{
+   max-width:300px;
+}
+.accordion-title {
+  width: 100%;
 }
 
-/* Unicode character for "plus" sign (+) */
-p.accordion:after {
-    content: '\2795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+/* height */
+.accordion-content{
+  min-height:100px;
+}
+.accordion-title {
+  height:40px;
 }
 
-/* Unicode character for "minus" sign (-) */
-p.accordion.active:after {
-    content: "\2796";
+/* border */
+.accordion{
+  border:thin solid #cecece;
+  border-top:none;
+  border-bottom:none;
+}
+.accordion-content,
+.accordion-title{
+  border-bottom:thin solid #cecece;
+}
+.accordion-first {
+  border-top:thin solid #cecece;
 }
 
-/* Style the element that is used for the panel class */
-
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in;
-    opacity: 0;
-    margin-bottom:10px;
+/* padding */
+.accordion-content{
+  padding-left:15px;
+}
+.accordion-title {
+  padding-left:15px;
 }
 
-div.panel.show {
-    opacity: 1;
-    max-height: 100%; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+/* background */
+.accordion-content{
+  background:white;
+}
+.accordion-title {
+  background:#f4f4f4;
+}
+
+/* box-sizing */
+.accordion-title {
+  box-sizing:border-box;
+}
+
+/* align-items */
+.accordion-title {
+  align-items: center;
+}
+
+/* text */
+.accordion-title {
+    color:#959696;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    text-shadow:0px 1px 1px white;
+    text-decoration:none;
 }
