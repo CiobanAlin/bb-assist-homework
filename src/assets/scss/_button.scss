@@ -1,0 +1,50 @@
+/* background */
+.button-small,
+.button-select,
+.button-back{
+  background-color: $darkred;
+}
+/* width */
+.button-small{
+  width:52px;
+}
+.button-select{
+  width: 100%;
+  max-width:200px;
+}
+.button-back{
+  width: 55px;
+}
+
+/* height */
+.button-small{
+  height:45px;
+}
+.button-select,
+.button-back{
+  height:35px;
+}
+
+/* margin */
+.button-small{
+  margin: 5px;
+  margin-top: 25px;
+}
+.button-back{
+  margin-bottom: 20px;
+}
+
+/* display */
+[class^="button"]{
+  display: flex;
+}
+
+/* justify-content W */
+[class^="button"]{
+  justify-content: center;
+}
+
+/* align-items H */
+[class^="button"]{
+  align-items: center;
+}

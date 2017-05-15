@@ -1,0 +1,46 @@
+/* font-size */
+.text-steP1,
+.text-separator
+{
+  font-size: 15px;
+}
+
+/* color */
+[class^="text-steP"],
+.text-separator{
+  color:$gray;
+}
+
+/* padding */
+.text-separator{
+  padding: 0 10px 0 5px;
+}
+.text-base-title{
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+.text-base-paragraph{
+  padding-top: 25px;
+}
+.text-results{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.text-service{
+  padding-bottom: 30px;
+}
+.text-serviceTitle{
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.text-money{
+  padding-bottom: 22px;
+  padding-left: 10px;
+}
+
+/* width */
+.text-service{
+  max-width: 750px;
+}
