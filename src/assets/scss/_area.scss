@@ -18,9 +18,18 @@
 .area-accordion{
   width: 100%;
   max-width: 300px;
+  @media screen and (max-width: $secondDrop) {
+    max-width: 100%;
+  }
 }
 .area-timeDay{
   width: 110px;
+}
+.area-columsDay{
+  max-width: 770px;
+}
+.area-arrow{
+  max-width: 40px;
 }
 
 /* height */
@@ -98,7 +107,9 @@
 .area-accordionMap,
 .area-imageText,
 .area-selectButton,
-.area-timeDay{
+.area-timeDay,
+.area-timePicker,
+.area-columsDay{
   display: flex;
 }
 /* justify-content W */
@@ -107,7 +118,9 @@
 .area-inputStudio,
 .area-accordionMap,
 .area-imageText,
-.area-timeDay{
+.area-timeDay,
+.area-timePicker,
+.area-columsDay{
   justify-content: center;
 }
 .area-selectButton{
@@ -117,7 +130,9 @@
 /* align-tems H */
 .area-logo,
 .area-steps,
-.area-timeDay{
+.area-timeDay,
+.area-timePicker,
+.area-columsDay{
   align-items: center;
 }
 .area-accordionMap,
@@ -134,6 +149,9 @@
 .area-accordionMap,
 .area-imageText{
   flex-flow: row; /* Edit Mobile */
+  @media screen and (max-width: $secondDrop) {
+    flex-flow: column;
+  }
 }
 .area-timeDay{
   flex-flow: column;

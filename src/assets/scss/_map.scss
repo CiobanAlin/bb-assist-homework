@@ -1,11 +1,20 @@
+/* order */
+.area-map{
+  @media screen and (max-width: $secondDrop) {
+    order: 1;
+  }
+}
 /* width */
-[class^="map"]{
+.area-map{
   width:100%;
 }
-.map{
+.area-map{
   max-width: 610px;
+  @media screen and (max-width: $secondDrop) {
+    max-width: 100%;
+  }
 }
 /* height */
-.map{
+.area-map{
   height: 460px;
 }

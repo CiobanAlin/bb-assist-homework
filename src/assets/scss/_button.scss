@@ -1,7 +1,8 @@
 /* background */
 .button-small,
 .button-select,
-.button-back{
+.button-back,
+.button-arrow{
   background-color: $darkred;
 }
 /* width */
@@ -15,6 +16,9 @@
 .button-back{
   width: 55px;
 }
+.button-arrow{
+  width: 20px;
+}
 
 /* height */
 .button-small{
@@ -23,6 +27,9 @@
 .button-select,
 .button-back{
   height:35px;
+}
+.button-arrow{
+  height: 30px;
 }
 
 /* margin */

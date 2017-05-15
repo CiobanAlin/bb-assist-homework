@@ -32,6 +32,9 @@
 .input{
   margin-top: 25px;
   margin-right: -10px; /* PC */
+  @media screen and (max-width: $fourthDrop) {
+    margin-right: 0px;
+  }
 }
 
 /* padding */

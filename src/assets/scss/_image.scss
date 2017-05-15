@@ -17,6 +17,9 @@
 }
 .image-service{
   max-width: 160px;
+  @media screen and (max-width: $secondDrop) {
+    max-width: 100%;
+  }
 }
 
 /* height */
