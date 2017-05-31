@@ -5,11 +5,15 @@
 .area-steps{
   background-color: $blue;
 }
+.area-BST{
+  background-color: #D9EDF7;
+}
 
 /* width */
 .area-logo,
 .area-header,
-.area-select{
+.area-select,
+.area-BST{
   width: 100%;
 }
 .area-article{
@@ -36,11 +40,12 @@
 .area-logo{
   min-height: 100px;
 }
-.area-steps{
+.area-steps,
+.area-BST{
   min-height: 50px;
 }
 .area-main{
-  min-height: 320px;
+  min-height: 325px;
 }
 
 /* margin */
@@ -70,7 +75,8 @@
 }
 .area-steps,
 .area-main,
-.area-select{
+.area-select,
+.area-BST{
   padding: 20px;
   @media only screen and (max-width: $watch) {
     padding: 15px;
@@ -78,6 +84,11 @@
 }
 .area-article{
   padding: 20px 5px 0 5px;
+}
+.area-resultsNumber{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 13px;
 }
 
 /* top */
@@ -108,9 +119,16 @@
 .area-imageText,
 .area-selectButton,
 .area-timeDay,
-.area-timePicker,
-.area-columsDay{
+.area-columsDay,
+.area-resultsNumber,
+.area-textInput{
   display: flex;
+}
+.area-select,
+.area-timePicker,
+.area-BST,
+.area-input-group{
+  display: none;
 }
 /* justify-content W */
 .area-logo,
@@ -126,17 +144,23 @@
 .area-selectButton{
   justify-content: flex-end;
 }
+.area-textInput{
+  justify-content: flex-start;
+}
 
 /* align-tems H */
 .area-logo,
 .area-steps,
 .area-timeDay,
 .area-timePicker,
-.area-columsDay{
+.area-columsDay,
+.area-BST,
+.area-textInput{
   align-items: center;
 }
 .area-accordionMap,
-.area-imageText{
+.area-imageText,
+.area-resultsNumber{
   align-items: flex-start;
 }
 
@@ -147,7 +171,8 @@
   flex-flow: row wrap;
 }
 .area-accordionMap,
-.area-imageText{
+.area-imageText,
+.area-textInput{
   flex-flow: row; /* Edit Mobile */
   @media screen and (max-width: $secondDrop) {
     flex-flow: column;
@@ -156,9 +181,20 @@
 .area-timeDay{
   flex-flow: column;
 }
+.area-resultsNumber{
+  flex-flow: row ;
+}
 
 /* shadow */
 .area-main,
 .area-select{
   box-shadow: inset 0px 0px 0px 1px $gray;
+}
+
+/* text-align */
+.text-indicatorInput{
+  text-align: right;
+  @media screen and (max-width: $secondDrop) {
+    text-align: center;
+  }
 }

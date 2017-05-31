@@ -35,6 +35,13 @@
 .accordion-first {
   border-top:thin solid #cecece;
 }
+/* margin */
+.area-accordion{
+  @media screen and (max-width: $secondDrop) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
 
 /* padding */
 .accordion-content{
@@ -45,11 +52,9 @@
 }
 
 /* background */
+.accordion-title,
 .accordion-content{
   background:white;
-}
-.accordion-title {
-  background:#f4f4f4;
 }
 
 /* box-sizing */
@@ -64,7 +69,7 @@
 
 /* text */
 .accordion-title {
-    color:#959696;
+    color:black;
     font-family:Arial;
     font-size:13px;
     font-weight:bold;
@@ -76,7 +81,5 @@
 .area-accordion{
   @media screen and (max-width: $secondDrop) {
     order: 2;
-    margin-top: 30px;
-    margin-bottom: 20px;
   }
 }

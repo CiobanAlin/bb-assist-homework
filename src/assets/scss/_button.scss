@@ -5,8 +5,15 @@
 .button-arrow{
   background-color: $darkred;
 }
+
+/* color */
+[class^="button"]{
+  color: white;
+}
+
 /* width */
-.button-small{
+.button-small,
+.button-pin{
   width:52px;
 }
 .button-select{
@@ -19,9 +26,13 @@
 .button-arrow{
   width: 20px;
 }
+[class*="Time"]{
+  width: 100%;
+}
 
 /* height */
-.button-small{
+.button-small,
+.button-pin{
   height:45px;
 }
 .button-select,
@@ -31,8 +42,19 @@
 .button-arrow{
   height: 30px;
 }
+[class*="Time"]{
+  height: 40px;
+}
 
 /* margin */
+.Step1-Button:nth-of-type(1){
+  margin: 0;
+  margin-top: 25px;
+}
+.Step1-Button:nth-of-type(2){
+  margin: 0 10px;
+  margin-top: 25px;
+}
 .button-small{
   margin: 5px;
   margin-top: 25px;
@@ -42,16 +64,27 @@
 }
 
 /* display */
-[class^="button"]{
+[type^="button"],
+[class*="Time"]{
   display: flex;
+}
+.button-back{
+  display: none;
 }
 
 /* justify-content W */
-[class^="button"]{
+[type^="button"],
+[class*="Time"]{
   justify-content: center;
 }
 
 /* align-items H */
-[class^="button"]{
+[type^="button"],
+[class*="Time"]{
   align-items: center;
+}
+
+/* outline */
+button {
+  outline: none;
 }

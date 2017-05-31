@@ -1,95 +1,106 @@
 /* div transform into input */
-[class="input"]:empty:not(:focus):before{
+[class="input/"]:empty:not(:focus):before{/* TEST */
         content:attr(data-text);
         color:darkgray;
     }
 /* color */
-[class^="input"]{
+[class^="input/"]{/* TEST */
   color: black;
 }
+::-webkit-input-placeholder {
+  color:darkgray;
+}
+.invalidInput::-webkit-input-placeholder {
+  color:$darkred;
+}
+.Step1-Button{
+  color: white;
+}
+
 /* appearance */
-.input{
+.input{/* TEST */
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
 }
 /* background*/
-.input{
+.Step1-Input{
   background-color: white;
   background-color: -moz-field;
 }
 
 /* height */
-.input{
+.Step1-Input{
   height: 45px;
 }
 /* width */
-.input{
+.Step1-Input{
   width: 100%;
   max-width: 380px;
 }
 
 /* margin */
-.input{
+.Step1-Input{
   margin-top: 25px;
-  margin-right: -10px; /* PC */
-  @media screen and (max-width: $fourthDrop) {
-    margin-right: 0px;
-  }
+  margin-right: 0px;
 }
 
 /* padding */
-.input{
+.Step1-Input{
   padding: 15px 18px;
 }
 
 /* border */
-.input{
+.Step1-Input{
   border: 1px solid lightgray;
 }
-.input:focus {
+.Step1-Input:focus,
+.Step1-Input:hover{
   border: 1px solid $darkred;
 }
 
 /* shadow */
-.input{
+.Step1-Input{
   box-shadow: 0 0 5px 0 lightgray inset;
 }
-.input:focus {
+.Step1-Input:focus {
   box-shadow: 0 0 5px 0 $darkred inset;
 }
 
 /* font */
-.input{
+.input{/* TEST */
   font: -moz-field;
   font: -webkit-small-control;
 }
 
 /* display */
-.input{
+.input{/* TEST */
   display: flex;
+}
+.input-mark{
+  display: none;
 }
 
 /* justify-content */
-.input{
+.input{/* TEST */
 justify-content: flex-start;
 }
 
 /* align-items */
-.input{
+.input{/* TEST */
 align-items: center;
 }
 
 /* resize */
-.input{
+.input{/* TEST */
   resize: none;
 }
 
 /* overflow */
-.input{
+.input{/*  TEST */
   overflow: hidden;
 }
 
 /* outline */
-.input:focus {
+.Step1-Input:focus {
   outline: none;
 }

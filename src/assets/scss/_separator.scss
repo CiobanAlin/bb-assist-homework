@@ -1,0 +1,18 @@
+/* margin */
+.separator-inMain{
+  margin-top:20px;
+  margin-bottom: 25px;
+}
+.separator-exMain{
+  margin-top:50px;
+  margin-bottom: 20px;
+}
+.separator-short{
+  margin: 0;
+}
+
+/* display */
+.separator-inMain,
+.separator-exMain{
+  display: none;
+}

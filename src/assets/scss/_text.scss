@@ -4,11 +4,39 @@
 {
   font-size: 15px;
 }
+.text-base-title,
+.text-base-titleInput{
+  font-size: 36px;
+}
+.text-monthYear{
+  font-size: 21px;
+}
+.text-results,
+.text-boldConfirm{
+  font-size: 24px;
+}
+
+/* font-weight */
+.text-base-title,
+.text-results{
+  font-weight: lighter;
+}
+.text-boldConfirm{
+  font-weight: bold;
+}
 
 /* color */
 [class^="text-steP"],
 .text-separator{
   color:$gray;
+}
+.text-indicator,
+.text-monthYear,
+.text-results{
+  color:#849CD3;
+}
+.text-BST{
+  color: #3670A9;
 }
 
 /* padding */
@@ -16,16 +44,14 @@
   padding: 0 10px 0 5px;
 }
 .text-base-title{
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 .text-base-paragraph{
   padding-top: 25px;
 }
 .text-results{
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  padding-left: 7px;
 }
 .text-service{
   padding-bottom: 30px;
@@ -39,8 +65,69 @@
   padding-bottom: 22px;
   padding-left: 10px;
 }
+.text-group{
+  padding-bottom: 15px;
+}
+.text-group:nth-of-type(1){
+  padding-top: 30px;
+}
+.text-monthYear{
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.text-noStudio{
+  padding-top: 25px;
+}
+.text-base-titleInput{
+  padding: 30px 0px 5px 30px;
+  @media screen and (max-width: $sixthDrop) {
+    padding-left: 0;
+    word-break: break-all;
+  }
+}
 
 /* width */
 .text-service{
   max-width: 750px;
+}
+.text-indicator{
+  width: 110px;
+}
+.text-target{
+  max-width: calc(100% - 110px);
+  @media screen and (max-width: $sixthDrop) {
+    max-width: 100%;
+  }
+}
+.text-monthYear,
+.text-noStudio{
+  width: 100%;
+}
+.text-indicatorInput{
+  width: 380px;
+  @media screen and (max-width: $sixthDrop) {
+    width: auto;
+  }
+}
+
+/* display */
+.text-group,
+.text-monthYear,
+.text-base-title:nth-of-type(2),
+.text-boldConfirm{
+  display: none;
+}
+
+/* flex-flow */
+.text-group{
+  flex-flow: row;
+  @media screen and (max-width: $sixthDrop) {
+    flex-flow: row wrap;
+  }
+}
+
+/* text-align */
+.text-monthYear,
+.text-boldConfirm{
+  text-align: center;
 }

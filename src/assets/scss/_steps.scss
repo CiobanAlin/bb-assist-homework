@@ -1,0 +1,30 @@
+.step1dot2Main{
+  /*display:  none*/;
+}
+.step3dot1dot1{
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin:0;
+}
+.step3dot1dot1Hover:hover{
+  background: $darkred;
+  color: white;
+}
+
+.stepTitle{
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.stepTitle:hover{
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+  color:white;
+}

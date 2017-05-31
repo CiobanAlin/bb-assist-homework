@@ -53,28 +53,28 @@ google.maps.event.addDomListener(window, "load", function () {
   var marker0 = createMarker({
     position: new google.maps.LatLng(47.6433993,26.248653999999988),
     map: map,
-  }, "<h1>Glow Beauty Place</h1><p>0752 566 796</p>",1);
+  }, "<label for='Select'><h1>Glow Beauty Place</h1><p>0752 566 796</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2()'/></label>",1);
 
   var marker1 = createMarker({
     position: new google.maps.LatLng(47.6425012,26.26066620000006),
     map: map
-  }, "<h1>The Makeup Academy</h1><p>0752 422 275</p>",2);
+  }, "<h1>The Makeup Academy</h1><p>0752 422 275</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2()'/>",2);
 
   var marker2 = createMarker({
     position: new google.maps.LatLng(47.642853,26.248365000000035),
     map: map
-  }, "<h1>Michelle Center</h1><p>0752 556 796</p>",3);
+  }, "<h1>Michelle Center</h1><p>0752 556 796</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2()'/>",3);
 
   var marker3 = createMarker({
     position: new google.maps.LatLng(47.6474023,26.247684800000002),
     map: map
-  }, "<h1>Carmen Style</h1><p>0230 520 888</p>",4);
+  }, "<h1>Carmen Style</h1><p>0230 520 888</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2()'/>",4);
 
   	/* repeat first */
     var marker0 = createMarker({
     position: new google.maps.LatLng(47.6433993,26.248653999999988),
     map: map,
-  }, "<h1>Glow Beauty Place</h1><p>0752 566 796</p>",1);
+  }, "<h1>Glow Beauty Place</h1><p>0752 566 796</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2()'/>",1);
 });
 
 })();
