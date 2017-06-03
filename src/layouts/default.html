@@ -85,6 +85,7 @@
       document.getElementsByClassName( 'text-group' )[8].style.display = 'none';
       document.getElementsByClassName( 'separator-inMain' )[1].style.display = 'none';
       document.getElementsByClassName( 'input-mark' )[0].style.display = 'none';
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'none';
       /* step 6 */
       document.getElementsByClassName( 'text-boldConfirm' )[0].style.display = 'none';
       document.getElementsByClassName( 'text-boldConfirm' )[1].style.display = 'none';
@@ -129,6 +130,7 @@
       document.getElementsByClassName( 'text-group' )[8].style.display = 'none';
       document.getElementsByClassName( 'separator-inMain' )[1].style.display = 'none';
       document.getElementsByClassName( 'input-mark' )[0].style.display = 'none';
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'none';
       /* step 6 */
       document.getElementsByClassName( 'text-boldConfirm' )[0].style.display = 'none';
       document.getElementsByClassName( 'text-boldConfirm' )[1].style.display = 'none';
@@ -156,7 +158,6 @@
       document.getElementsByClassName( 'text-group' )[2].style.display = 'flex';
       document.getElementsByClassName( 'text-group' )[3].style.display = 'flex';
       document.getElementsByClassName( 'text-group' )[4].style.display = 'flex';
-      document.getElementsByClassName( 'text-group' )[5].style.display = 'flex';
       document.getElementsByClassName( 'separator-inMain' )[0].style.display = 'block';
       document.getElementsByClassName( 'area-BST' )[0].style.display = 'flex';
       document.getElementsByClassName( 'text-monthYear' )[0].style.display = 'block';
@@ -169,6 +170,7 @@
       document.getElementsByClassName( 'button-back' )[1].style.background = 'pink';
       document.getElementsByClassName( 'separator-exMain' )[0].style.display = 'block';
       /* step4 */
+      document.getElementsByClassName( 'text-group' )[5].style.display = 'none';
       document.getElementsByClassName( 'area-input-group' )[0].style.display = 'none';
       /* step 5 */
       document.getElementsByClassName('text-base-title')[1].style.display = 'none';
@@ -177,6 +179,7 @@
       document.getElementsByClassName( 'text-group' )[8].style.display = 'none';
       document.getElementsByClassName( 'separator-inMain' )[1].style.display = 'none';
       document.getElementsByClassName( 'input-mark' )[0].style.display = 'none';
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'none';
       /* step 6 */
       document.getElementsByClassName( 'text-boldConfirm' )[0].style.display = 'none';
       document.getElementsByClassName( 'text-boldConfirm' )[1].style.display = 'none';
@@ -186,6 +189,7 @@
     </script>
     <!-- step3.1 -->
     <script>
+    var i,j;
     $(".Time9").css("display","none");
     $(".Time10").css("display","none");
     $(".Time11").css("display","none");
@@ -199,31 +203,57 @@
     $(".pickTime").on({
       click:
       function step3dot1(){
-        document.getElementsByClassName( 'button-back' )[1].style.background = '#E36A63';
-        document.getElementsByClassName( 'button-back' )[1].disabled = false;
-       $(this).find(".step3dot1dot1").css("height","auto");
+        $(".area-avaliable").css("display","flex");
+        $(this).find(".area-avaliable").css("display","none");
+/*
+        if( $(this).find(".area-avaliable").style.display="none")){
+          $(this).find(".area-avaliable").css("display","block");
+        }else{
+          $(".area-avaliable").css("display","none");
+        }
+*/
+       $(this).css("height","auto");
+       $(this).css("min-height","70px");
+       $("pickTime").addClass("step3dot1dot1Hover");
        $(this).removeClass("step3dot1dot1Hover");
-       $(this).find(".area-avaliable").css("display","none");
-       $(this).find(".Time9").css("display","block");
-       $(this).find(".Time10").css("display","block");
-       $(this).find(".Time11").css("display","block");
-       $(this).find(".Time12").css("display","block");
-       $(this).find(".Time13").css("display","block");
-       $(this).find(".Time14").css("display","block");
-       $(this).find(".Time15").css("display","block");
-       $(this).find(".Time16").css("display","block");
-       $(this).find(".Time17").css("display","block");
-       $(this).find(".Time18").css("display","block");
-       for (i = 9; i <= 18; i++) {
-         if($(".Time'+i+'").style.display != "none"){
-          $(".Time'+i+'").style.display = 'none';
-         }else{
-          $(".Time'+i+'").style.display = 'block';
-         }
+       $("[class^=Time]").css("display","none");
+       $(this).find("[class^=Time]").css("display","flex");
+       /*
+       for (i = 0; i <= 20; i++) {
+        for (j = 9; j <= 18; j++) {
+           if($(".pickTime[i]").style.display != "none" && $(this).find(".Time[j]").style.display="block")){
+            $(".pickTime").style.display = 'none';
+          }
+      }else{
+        $(".pickTime").style.display = 'block';
+        }
        }
+       */
       }
 
     });
+    </script>
+    <!-- step3.2 -->
+    <script>
+    var x=0;
+    $(document).ready(function() {
+        $('[class^=Time]').click(function() {
+          var hourPicker = $(this).text();
+          $('.pickTime').css("background-color","white").css("color","black");
+          var item = $(this).parent().html( );
+          $(this).parent().html( item + hourPicker ).css("background-color","#E36A63").css("color","white");/*.on("click" , function(){ step3dot1(); });*/
+
+          /*
+          $(".area-avaliable").not(this).css("display","flex");
+          $("[class^=Time]").not(this).css("display","none");
+          */
+          document.getElementsByClassName( 'button-back' )[1].style.background = '#E36A63';
+          document.getElementsByClassName( 'button-back' )[1].disabled = false;
+          x++;
+          return x;
+        });
+    });
+
     </script>
     <!-- step4 -->
     <script>
@@ -265,6 +295,7 @@
       document.getElementsByClassName( 'text-group' )[8].style.display = 'none';
       document.getElementsByClassName( 'separator-inMain' )[1].style.display = 'none';
       document.getElementsByClassName( 'input-mark' )[0].style.display = 'none';
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'none';
       /* step 6 */
       document.getElementsByClassName( 'text-boldConfirm' )[0].style.display = 'none';
       document.getElementsByClassName( 'text-boldConfirm' )[1].style.display = 'none';
@@ -331,6 +362,7 @@
       document.getElementsByClassName( 'button-back' )[1].disabled = true;
       document.getElementsByClassName( 'button-back' )[1].style.background = 'lightgreen';
       document.getElementsByClassName( 'button-back' )[1].innerHTML = "Pay";
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'block';
       /* step 6 */
       document.getElementsByClassName( 'text-boldConfirm' )[0].style.display = 'none';
       document.getElementsByClassName( 'text-boldConfirm' )[1].style.display = 'none';
@@ -393,6 +425,7 @@
       document.getElementsByClassName( 'text-group' )[7].style.display = 'flex';
       document.getElementsByClassName( 'text-group' )[8].style.display = 'flex';
       document.getElementsByClassName( 'separator-inMain' )[1].style.display = 'block';
+      document.getElementsByClassName( 'area-mapSelected' )[0].style.display = 'block';
       /* default */
       $('html, body').animate({scrollTop : 0},'fast'); /*.scrollTop( 0 )*/
       return false;

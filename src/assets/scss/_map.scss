@@ -5,7 +5,8 @@
   }
 }
 /* width */
-.area-map{
+.area-map,
+.area-mapSelected{
   width:100%;
 }
 .area-map{
@@ -15,6 +16,11 @@
   }
 }
 /* height */
-.area-map{
+.area-map,
+.area-mapSelected{
   height: 460px;
+}
+/* display */
+.area-mapSelected{
+  display: none;
 }
