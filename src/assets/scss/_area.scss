@@ -8,12 +8,19 @@
 .area-BST{
   background-color: #D9EDF7;
 }
+.area-ExpandHours,
+.area-TimePicked{
+  background-color: $darkred;
+}
 
 /* width */
 .area-logo,
 .area-header,
 .area-select,
-.area-BST{
+.area-BST,
+.area-ChooseHour,
+.area-ExpandHours,
+.area-TimePicked{
   width: 100%;
 }
 .area-article{
@@ -47,6 +54,15 @@
 .area-main{
   min-height: 325px;
 }
+.area-ExpandHours,
+.area-ChooseHour,
+.area-pickTime,
+.area-TimePicked{
+  height: 100%;
+}
+.area-pickTime{
+  min-height: 70px;
+}
 
 /* margin */
 .area-article{
@@ -67,6 +83,11 @@
 }
 .area-timeDay{
   margin: 0 5px;
+}
+.area-ExpandHours,
+.area-ChooseHour,
+.area-TimePicked{
+  margin:0;
 }
 
 /* padding */
@@ -121,7 +142,8 @@
 .area-timeDay,
 .area-columsDay,
 .area-resultsNumber,
-.area-textInput{
+.area-textInput,
+.area-ExpandHours{
   display: flex;
 }
 .area-select,
@@ -138,7 +160,8 @@
 .area-imageText,
 .area-timeDay,
 .area-timePicker,
-.area-columsDay{
+.area-columsDay,
+.area-ExpandHours{
   justify-content: center;
 }
 .area-selectButton{
@@ -155,7 +178,8 @@
 .area-timePicker,
 .area-columsDay,
 .area-BST,
-.area-textInput{
+.area-textInput,
+.area-ExpandHours{
   align-items: center;
 }
 .area-accordionMap,
@@ -166,7 +190,8 @@
 
 /* flex-flow */
 .area-steps,
-.area-inputStudio
+.area-inputStudio,
+.area-ExpandHours
 {
   flex-flow: row wrap;
 }
@@ -197,4 +222,10 @@
   @media screen and (max-width: $secondDrop) {
     text-align: center;
   }
+}
+
+/* color */
+.area-ExpandHours,
+.area-TimePicked{
+  color: white;
 }

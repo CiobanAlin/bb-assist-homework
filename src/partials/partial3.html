@@ -25,220 +25,389 @@
 </div>
 <!-- step 3 timePicker -->
 <hr class="separator-long separator-inMain">
-<span class="area-BST">
+<span class="area-BST [ js-area-BST ]">
 <p class="text-BST">All times are shown in BST.</p>
 </span>
-<h class="text-monthYear">May 2017</h>
-<div class="area-timePicker">
+<h1 class="text-monthYear [ js-text-monthYear ]">May 2017</h1>
+<div class="area-timePicker [ js-area-timePicker ]">
 <aside class="area-arrow">
-<span class="button-arrow"></span>
+<button class="button-arrow [ js-button-arrow ]"></button>
 </aside>
 <aside class="area-columsDay">
 <span class="area-timeDay">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button type="button" class="pickTime step3dot1dot1 step3dot1dot1Hover step3dot1dot1 step3dot1dot1HoverHover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
-  <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
-  <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover [ js-my-button ]" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
-  <hr class="separator-short">
-</span>
-<span class="area-timeDay sixthDrop">
-  <h>Sun 14</h>
-  <hr class="separator-short">
-  <button type="button" class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
+<section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+  <button class="area-ChooseHour [ js-button-ChooseHour ]">
     <p>+ MORNING</p>
     <div class="area-avaliable">3 available</div>
+  </button>
+  <button class="area-ExpandHours [ js-button-ExpandHours ]">
+    <p>- MORNING</p>
     <div class="Time9">9:00</div>
     <div class="Time10">10:00</div>
     <div class="Time11">11:00</div>
   </button>
+  <button class="area-TimePicked [ js-button-TimePicked ]">
+    <div class="TimePicked">TEST</div>
+  </button>
+</section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
+  <hr class="separator-short">
+</span>
+<span class="area-timeDay sixthDrop">
+  <h1>Sun 14</h1>
+  <hr class="separator-short">
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
+  <hr class="separator-short">
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
+  <hr class="separator-short">
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 <span class="area-timeDay fifthDrop">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 <span class="area-timeDay fourthDrop">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 <span class="area-timeDay thirdDrop">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 <span class="area-timeDay secondDrop">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 <span class="area-timeDay firstDrop">
-  <h>Sun 14</h>
+  <h1>Sun 14</h1>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ MORNING</p>
-  <div class="area-avaliable">3 available</div>
-  <div class="Time9">9:00</div>
-  <div class="Time10">10:00</div>
-  <div class="Time11">11:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ MORNING</p>
+      <div class="area-avaliable">3 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- MORNING</p>
+      <div class="Time9">9:00</div>
+      <div class="Time10">10:00</div>
+      <div class="Time11">11:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ AFTERNOON</p>
-  <div class="area-avaliable">5 available</div>
-  <div class="Time12">12:00</div>
-  <div class="Time13">13:00</div>
-  <div class="Time14">14:00</div>
-  <div class="Time15">15:00</div>
-  <div class="Time16">16:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ AFTERNOON</p>
+      <div class="area-avaliable">5 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- AFTERNOON</p>
+      <div class="Time12">12:00</div>
+      <div class="Time13">13:00</div>
+      <div class="Time14">14:00</div>
+      <div class="Time15">15:00</div>
+      <div class="Time16">16:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
-<button class="pickTime step3dot1dot1 step3dot1dot1Hover" onclick="step3dot1()">
-  <p>+ EVENING</p>
-  <div class="area-avaliable">2 available</div>
-  <div class="Time17">17:00</div>
-  <div class="Time18">18:00</div>
-</button>
+  <section class="area-pickTime  step3dot1dot1 step3dot1dot1 "  >
+    <button class="area-ChooseHour [ js-button-ChooseHour ]">
+      <p>+ EVENING</p>
+      <div class="area-avaliable">2 available</div>
+    </button>
+    <button class="area-ExpandHours [ js-button-ExpandHours ]">
+      <p>- EVENING</p>
+      <div class="Time17">17:00</div>
+      <div class="Time18">18:00</div>
+    </button>
+    <button class="area-TimePicked [ js-button-TimePicked ]">
+      <div class="TimePicked">TEST</div>
+    </button>
+  </section>
   <hr class="separator-short">
 </span>
 </aside>
 <aside class="area-arrow">
-<span class="button-arrow"></span>
+<button class="button-arrow [ js-button-arrow ]"></button>
 </aside>
 </div>
+<button class=" [ js-button-resetDate ] ">Change Date</button>

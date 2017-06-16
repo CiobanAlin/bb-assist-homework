@@ -26,7 +26,7 @@
 .button-arrow{
   width: 20px;
 }
-[class*="Time"]{
+[class^="Time"]{
   width: 100%;
 }
 
@@ -42,7 +42,7 @@
 .button-arrow{
   height: 30px;
 }
-[class*="Time"]{
+[class^="Time"]{
   height: 40px;
 }
 
