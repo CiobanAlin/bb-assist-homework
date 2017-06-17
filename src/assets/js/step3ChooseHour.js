@@ -40,9 +40,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText == 0)
   {
-    $('.js-button-ChooseHour:eq(0)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(1)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(2)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(0)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(1)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(2)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 2 !! */
   var today = date.getTime();
@@ -53,9 +53,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText2 == 0)
   {
-    $('.js-button-ChooseHour:eq(3)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(4)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(5)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(3)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(4)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(5)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 3 !! */
   var today = date.getTime();
@@ -66,9 +66,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText3 == 0)
   {
-    $('.js-button-ChooseHour:eq(6)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(7)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(8)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(6)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(7)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(8)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 4 !! */
   var today = date.getTime();
@@ -79,9 +79,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText4 == 0)
   {
-    $('.js-button-ChooseHour:eq(9)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(10)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(11)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(9)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(10)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(11)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 5 !! */
   var today = date.getTime();
@@ -92,9 +92,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText5 == 0)
   {
-    $('.js-button-ChooseHour:eq(12)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(13)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(14)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(12)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(13)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(14)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 6 !! */
   var today = date.getTime();
@@ -105,9 +105,9 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText6 == 0)
   {
-    $('.js-button-ChooseHour:eq(15)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(16)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(17)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(15)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(16)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(17)').css("background-color","black").css("color","white").prop('disabled', true);
   }
   /* !! day 7 !! */
   var today = date.getTime();
@@ -118,42 +118,42 @@ $(document).ready(function() {
   /* !! Sunday OFF !! */
   if(dayText7 == 0)
   {
-    $('.js-button-ChooseHour:eq(18)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(19)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
-    $('.js-button-ChooseHour:eq(20)').html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(18)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(19)').css("background-color","black").css("color","white").prop('disabled', true);
+    $('.js-button-ChooseHour:eq(20)').css("background-color","black").css("color","white").prop('disabled', true);
   }
 
   /* !! hour detect (if current time passed avaliable time make it UNAVALIABLE + 1H ) !! */
   var hour = date.getHours();
   if(hour+1 >= 9){
-    var hour9 = $(".Time9").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour9 = $(".Time9").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 10){
-    var hour10 = $(".Time10").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour10 = $(".Time10").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 11){
-    var hour11 = $(".Time11").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour11 = $(".Time11").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 12){
-    var hour12 = $(".Time12").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour12 = $(".Time12").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 13){
-    var hour13 = $(".Time13").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour13 = $(".Time13").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 14){
-    var hour14 = $(".Time14").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour14 = $(".Time14").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 15){
-    var hour15 = $(".Time15").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour15 = $(".Time15").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 16){
-    var hour16 = $(".Time16").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour16 = $(".Time16").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 17){
-    var hour17 = $(".Time17").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour17 = $(".Time17").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
   if(hour+1 >= 18){
-    var hour18 = $(".Time18").first().html("X").css("background-color","black").css("color","white").prop('disabled', true);
+    var hour18 = $(".Time18").first().css("background-color","black").css("color","white").prop('disabled', true);
   }
 
 
@@ -184,6 +184,8 @@ $(document).ready(function() {
   /* !! make Continue button Clickable when hour is choosen !! */
   $( '.button-back:eq(1)' ).css("background", "#E36A63");
   $( '.button-back:eq(1)' ).prop('disabled', false);
+
+  step3Arrow();
 
   });
 

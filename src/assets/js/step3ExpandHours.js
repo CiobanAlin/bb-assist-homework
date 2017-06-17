@@ -19,7 +19,7 @@
       /* reset */
       $(".js-button-ChooseHour").not(parent).css("display","block");
       $(parentHour).find('.js-button-ChooseHour').css("display","none");
-      $(".js-button-ExpandHours").not(parent).css("display","none");
+        $(".js-button-ExpandHours").not(parent).css("display","none");
       /* hide hours in the button pressed one turn forward
       (usefull when function is called at least twice) */
       $(parent).find(".js-button-ChooseHour").css("display","none");
