@@ -6,6 +6,8 @@ $(".js-step1").click(function(){ step1() });
 function step1(){
 
   /* step1 */
+  $('.stepTitle').eq(0).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(0)').css("color","black");
   $('.text-base-paragraph:eq(0)').css("display","block");
   $('.text-base-paragraph:eq(1)').css("display","block");
   $('.text-base-title:eq(0)').html("Select Your Studio");

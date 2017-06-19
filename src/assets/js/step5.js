@@ -20,6 +20,9 @@ function step5(){
   /* step 4 */
   $('.area-input-group:eq(0)').css("display","none");
   /* step 5 */
+
+  $('.stepTitle').eq(4).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(4)').css("color","black");
   $('.text-base-title:eq(0)').html("Booking Summary");
   $('.text-group:eq(0)').css("display","flex");
   $('.text-group:eq(1)').css("display","flex");
@@ -36,10 +39,11 @@ function step5(){
   $('.separator-exMain:eq(0)').css("display","block");
   $('.input-mark:eq(0)').css("display","block");
   $('.button-back:eq(0)').css("display","block");
-  $('.button-back:eq(0)').click = function(){ step4(); };
+  $('.button-back:eq(0)').click(function(){ step5() });
   $('.button-back:eq(1)').css("display","block");
   $('.button-back:eq(1)').prop('disabled', true);
   $('.button-back:eq(1)').css("background-color","lightgreen");
+  $('.button-back:eq(1)').click(function(){ step6() });
   $('.button-back:eq(1)').html("Pay");
   $('.area-mapSelected:eq(0)').css("display","block");
   /* step 6 */

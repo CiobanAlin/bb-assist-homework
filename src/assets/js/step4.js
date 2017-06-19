@@ -18,19 +18,17 @@ function step4(){
   $( '.text-monthYear:eq(0)').css("display","none");
   $( '.js-area-timePicker:eq(0)').css("display","none");
   /* step 4 */
+  $('.stepTitle').eq(3).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(3)').css("color","black");
   $( '.text-base-title:eq(0)').html("Your Details");
   $( '.text-group:eq(0)').css("display","flex");
-  var type=$('.js-details-type').html();
-  $( '.text-target:eq(0)').css("display","flex").html(type);
+  $( '.text-target:eq(0)').css("display","flex");
   $( '.text-group:eq(1)').css("display","flex");
-  var description=$('.js-details-description').html();
-  $( '.text-target:eq(1)').css("display","flex").html(description);
+  $( '.text-target:eq(1)').css("display","flex");
   $( '.text-group:eq(2)').css("display","flex");
-  var price=$('.js-details-price').html();
-  $( '.text-target:eq(2)').css("display","flex").html(price);
+  $( '.text-target:eq(2)').css("display","flex");
   $( '.text-group:eq(3)').css("display","flex");
-  var adress=$('.js-details-adress').html();
-  $( '.text-target:eq(3)').css("display","flex").html(adress);
+  $( '.text-target:eq(3)').css("display","flex");
   $( '.text-group:eq(4)').css("display","flex");
   var duration=$('.js-details-duration').html();
   $( '.text-target:eq(4)').css("display","flex").html(duration);

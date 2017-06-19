@@ -13,6 +13,9 @@ function step3(){
   $('.area-select:eq(0)').css("display","none");
   $('.area-select:eq(1)').css("display","none");
   /* step 3*/
+  $(".js-step3").click(function(){ step3() });
+  $('.stepTitle').eq(2).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(2)').css("color","black");
   $('.text-base-title:eq(0)').html("Select Your Time");
   $('.text-base-paragraph:eq(0)').css("display","none");
   $('.text-base-paragraph:eq(1)').css("display","none");

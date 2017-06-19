@@ -27,6 +27,8 @@ function step6(){
   $('.input-mark:eq(0)').css("display","none");
   $('.button-back:eq(0)').css("display","none");
   /* step 6 */
+  $('.stepTitle').eq(5).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(5)').css("color","black");
   $('.text-base-title:eq(0)').html("Booking Complete");
   $('.text-boldConfirm:eq(0)').css("display","block");
   $('.text-boldConfirm:eq(1)').css("display","block");

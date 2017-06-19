@@ -8,15 +8,15 @@
     <h class="text-steP1">
       <button class="stepTitle [ js-step1 ]">1. Select Studio</button></h>
     <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle" onclick="step2()">2. Select Photo Shoot</button></h>
+    <h class="text-steP1"><button class="stepTitle [ js-step2 ]">2. Select Photo Shoot</button></h>
     <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle" onclick="step3()">3. Select Time</button></h>
+    <h class="text-steP1"><button class="stepTitle [ js-step3 ]">3. Select Time</button></h>
     <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle" onclick="step4()">4. Personal Information</button></h>
+    <h class="text-steP1"><button class="stepTitle [ js-step4 ]">4. Personal Information</button></h>
     <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle" onclick="step5()">5. Summary</button></h>
+    <h class="text-steP1"><button class="stepTitle [ js-step5 ]">5. Summary</button></h>
     <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle" onclick="step6()">6. Confirm</button></h>
+    <h class="text-steP1"><button class="stepTitle [ js-step6 ]">6. Confirm</button></h>
   </div>
 </header>
 <article class="area-article">
@@ -66,37 +66,63 @@
       <aside class="area-accordion">
         <div class="accordion">
 
+
+          <div class="[ js-accordion-row ]">
             <a class="accordion-title accordion-first" href="#row-one">
-              <p><b>1.</b>Glow Beauty Place</p>
+              <p class="[ js-accordion-title ]">
+                1.Glow Beauty Place
+              </p>
             </a>
             <span class="accordion-content" id="row-one">
-                <p>Telefon: 0752 566 796</p>
-                <input type="button" class="button-Step1dot2dot1" value="Select" onclick="step2()"/>
+                <p class="[ js-accordion-description ]">
+                  Telefon: 0752 566 796
+                </p>
+                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
             </span>
+          </div>
 
+          <div class="[ js-accordion-row ]">
             <a class="accordion-title" href="#row-two">
-              <p><b>2.</b>The Makeup Academy</p>
+              <p class="[ js-accordion-title ]">
+                2.The Makeup Academy
+              </p>
             </a>
             <span class="accordion-content" id="row-two">
+              <p class="[ js-accordion-description ]">
                 Telefon: 0752 422 275
-                <input type="button" class="button-Step1dot2dot1" value="Select" onclick="step2()"/>
+              </p>
+                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
             </span>
+          </div>
 
+          <div class="[ js-accordion-row ]">
             <a class="accordion-title" href="#row-three">
-              <p><b>3.</b>Michelle Center</p>
+              <p class="[ js-accordion-title ]">
+                3.Michelle Center
+              </p>
             </a>
             <span class="accordion-content" id="row-three">
-                Telefon: 0752 556 796
-                <input type="button" class="button-Step1dot2dot1" value="Select" onclick="step2()"/>
+              <p class="[ js-accordion-description ]">
+                  Telefon: 0752 556 796
+              </p>
+                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
             </span>
+        </div>
 
+          <div class="[ js-accordion-row ]">
             <a class="accordion-title" href="#row-four">
-              <p><b>4.</b>Carmen Style</p>
+              <p class="[ js-accordion-title ]">
+                4.Carmen Style
+              </p>
             </a>
             <span class="accordion-content" id="row-four">
-                Telefon: 0230 520 888
-                <input type="button" class="button-Step1dot2dot1" value="Select" onclick="step2()"/>
+                <p class="[ js-accordion-description ]">
+                  Telefon: 0230 520 888
+                </p>
+                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
             </span>
+          </div>
+
 
         </div>
       </aside>

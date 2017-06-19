@@ -9,6 +9,9 @@ function step2(){
   $('.step1dot2Main:eq(0)').css("display","none");
   $('.area-inputStudio:eq(0)').css("display","none");
   /* step 2 */
+
+  $('.stepTitle').eq(1).css("color","white");
+  $('.stepTitle').not('.stepTitle:eq(1)').css("color","black");
   $('.text-base-title:eq(0)').html("Select Your Photo Shoot");
   $('.text-base-paragraph:eq(0)').html("At PixiFoto we pride ourselves in offering a fun and exciting photography experience and with a variety of photo shoots to choose from, there is something for everyone.");
   $('.text-base-paragraph:eq(1)').html("We have the expertise to get the best results so book today and let us capture those magical moments in time, forever.");
@@ -17,6 +20,19 @@ function step2(){
   $('.separator-exMain:eq(0)').css("display","block");
   $('.button-back:eq(0)').css("display","block");
   $('.button-back:eq(0)').click(function() { step1(); });
+  $('.js-button-step3').click(function() { step3();
+
+    var type=$(this).parent().parent().find('.text-serviceTitle').html();
+    $( '.text-target:eq(0)').html(type);
+
+    var description=$(this).parent().parent().find('.text-service').html();
+    $( '.text-target:eq(1)').html(description);
+
+    var price=$(this).parent().parent().find('.text-money').html();
+    $( '.text-target:eq(2)').html(price);
+
+  });
+
   /* step 3 */
   $('.text-group:eq(0)').css("display","none");
   $('.text-group:eq(1)').css("display","none");
