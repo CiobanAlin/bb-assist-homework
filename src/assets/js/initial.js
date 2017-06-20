@@ -7,13 +7,16 @@
     $(document).ready(function() {
       $("html").css("display","block");
     });
+    /* top menu */
     $(".js-step1").click(function(){ step1() });
     $(".js-step2").click(function(){ step2() });
     $(".js-step3").click(function(){ step3() });
     $(".js-step4").click(function(){ step4() });
     $(".js-step5").click(function(){ step5() });
+    /* step1 */
     $('.stepTitle').eq(0).css("color","white");
     $('.stepTitle').not('.stepTitle:eq(0)').css("color","black");
+    /* step3 */
     $(".js-button-resetDate").css("display","none");
     $(".js-text-baseTitle").css("display","none");
     $(".js-button-ExpandHours").css("display","none");
@@ -21,7 +24,7 @@
     $(".js-button-ChooseHour").css("background-color","white");
     $('.area-pickTime').css("min-height","70px");
     $('.js-button-ChooseHour').css("height","70px");
-
+    /* step2  */
     function step2Map() {
         step2();
         var i;

@@ -20,7 +20,6 @@ function step5(){
   /* step 4 */
   $('.area-input-group:eq(0)').css("display","none");
   /* step 5 */
-
   $('.stepTitle').eq(4).css("color","white");
   $('.stepTitle').not('.stepTitle:eq(4)').css("color","black");
   $('.text-base-title:eq(0)').html("Booking Summary");

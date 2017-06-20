@@ -1,5 +1,1 @@
 
-
-
-
-  $('.js-button-step2')

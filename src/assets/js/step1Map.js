@@ -39,7 +39,7 @@ google.maps.event.addDomListener(window, "load", function step1Map() {
 
     if (html) {
       google.maps.event.addListener(marker, "click", function () {
-
+        /* connection between map and accordion */
         infoWindow.setContent(html);
         if(this == marker0)
         {
@@ -80,9 +80,9 @@ google.maps.event.addDomListener(window, "load", function step1Map() {
 
           $(a).css('display', 'block').addClass('js-activeAdress');
 
-          //$(a).slideToggle('fast');
+          //hide if not active
           $(".accordion-content").not(a).css('display', 'none').removeClass('js-activeAdress');
-
+          /* connection between accordion and map */
           if($('.accordion-content:eq(0)').hasClass('js-activeAdress')){
             infoWindow.setContent("<h1>Glow Beauty Place</h1><p>0752 566 796</p><input type='button' class='button-Step1dot2dot1' value='Select' onclick='step2Map()'/>");
               infoWindow.open(options.map, marker0);

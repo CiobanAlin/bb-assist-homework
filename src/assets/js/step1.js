@@ -2,7 +2,7 @@
 
 
   /* step1 */
-$(".js-step1").click(function(){ step1() });
+
 function step1(){
 
   /* step1 */

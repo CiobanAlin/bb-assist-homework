@@ -1,31 +1,15 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
 
 <header class="area-header">
-  <div class="area-logo">
-    <span class="image-logo"></span>
-  </div>
-  <div class="area-steps">
-    <h class="text-steP1">
-      <button class="stepTitle [ js-step1 ]">1. Select Studio</button></h>
-    <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle [ js-step2 ]">2. Select Photo Shoot</button></h>
-    <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle [ js-step3 ]">3. Select Time</button></h>
-    <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle [ js-step4 ]">4. Personal Information</button></h>
-    <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle [ js-step5 ]">5. Summary</button></h>
-    <p class="text-separator">/</p>
-    <h class="text-steP1"><button class="stepTitle [ js-step6 ]">6. Confirm</button></h>
-  </div>
+  {{>header}}
 </header>
 <article class="area-article">
-  <main class="area-main">
+  <section class="area-main">
     <div class="area-studio">
       <!-- step 1.1 + 2 + 3 + 4 + 5 + 6  -->
         {{>partial1}}
       <!-- step 5 -->
-        {{>partial5}}
+        {{>partial5top}}
       <!-- step 2 -->
         {{>partial2}}
       <!-- step 3 -->
@@ -33,106 +17,12 @@
   <!-- step 4 Inputs -->
     {{>partial4}}
   <!-- step 5 My Details + Map -->
-  <h class="text-base-title [ js-text-baseTitle ]">My Details</h>
-  <span class="text-group">
-     <p class="text-indicator">Name:</p>
-     <p class="text-target">Cioban Alin-Florin</p>
-  </span>
-  <span class="text-group">
-     <p class="text-indicator">Email:</p>
-     <p class="text-target">soalenaxlyx@yahoo.com</p>
-  </span>
-  <span class="text-group">
-     <p class="text-indicator">Mobile:</p>
-     <p class="text-target">0747332638</p>
-  </span>
-  <hr class="separator-inMain">
-  <aside id="map-areaSelected" class="area-mapSelected">
-  </aside>
-  <!-- step 1.1 -->
-    <div class="area-inputStudio">
-      <input type="text" class="step1Input Step1-Input" placeholder="Enter postcode or location"/>
-      <button type="button" class="Step1-Button" onclick="step0()"><span class="icon-search"></span></button>
-      <button type="button" class="Step1-Button button-pin" onclick="step0()"><span class="icon-pin"></span></button>
-    </div>
-  </main>
+{{>partial5bot}}
+  <!-- step 0 -->
+{{>partial0}}
+  </section>
   <!-- step 1.2 -->
-  <main class="area-main area-results step1dot2Main">
-    <div class="area-resultsNumber">
-      <h class="text-results">4 results for salons near </h>
-      <span class="step1Salons text-results"></span>
-    </div>
-    <div class="area-accordionMap">
-      <aside class="area-accordion">
-        <div class="accordion">
-
-
-          <div class="[ js-accordion-row ]">
-            <a class="accordion-title accordion-first" href="#row-one">
-              <p class="[ js-accordion-title ]">
-                1.Glow Beauty Place
-              </p>
-            </a>
-            <span class="accordion-content" id="row-one">
-                <p class="[ js-accordion-description ]">
-                  Telefon: 0752 566 796
-                </p>
-                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
-            </span>
-          </div>
-
-          <div class="[ js-accordion-row ]">
-            <a class="accordion-title" href="#row-two">
-              <p class="[ js-accordion-title ]">
-                2.The Makeup Academy
-              </p>
-            </a>
-            <span class="accordion-content" id="row-two">
-              <p class="[ js-accordion-description ]">
-                Telefon: 0752 422 275
-              </p>
-                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
-            </span>
-          </div>
-
-          <div class="[ js-accordion-row ]">
-            <a class="accordion-title" href="#row-three">
-              <p class="[ js-accordion-title ]">
-                3.Michelle Center
-              </p>
-            </a>
-            <span class="accordion-content" id="row-three">
-              <p class="[ js-accordion-description ]">
-                  Telefon: 0752 556 796
-              </p>
-                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
-            </span>
-        </div>
-
-          <div class="[ js-accordion-row ]">
-            <a class="accordion-title" href="#row-four">
-              <p class="[ js-accordion-title ]">
-                4.Carmen Style
-              </p>
-            </a>
-            <span class="accordion-content" id="row-four">
-                <p class="[ js-accordion-description ]">
-                  Telefon: 0230 520 888
-                </p>
-                <button type="button" class="button-Step1dot2dot1 [ js-button-step2 ]">Select</button>
-            </span>
-          </div>
-
-
-        </div>
-      </aside>
-      <aside id="map-area" class="area-map">
-      </aside>
-    </div>
-    <div>
-      <h class="text-noStudio">No studio near you? Please click <a href="">here</a> to see if we have a pop-up studio in your area.</h>
-    </div>
-  </main>
+{{>partial1bot}}
   <hr class="separator-exMain">
   <label class="input-mark">
     <input type="checkbox" v-model="checked" class="step5Continue"/>
