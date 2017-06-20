@@ -4,7 +4,10 @@
     /* step 5 Continue */
 
 $(document).ready(function () {
-  $('.step5Continue').on('click',function () {
+  $('.step5Continue').on({
+    click:
+
+    function (){
     if ($('.step5Continue').is(':checked')) {
       $('.button-back:eq(1)').prop('disabled', false);
       $('.button-back:eq(1)').css("background-color","darkgreen");
@@ -13,6 +16,7 @@ $(document).ready(function () {
     } else {
       $('.button-back:eq(1)').prop('disabled', true);
       $('.button-back:eq(1)').css("background-color","lightgreen");
+    }
     }
   });
 });
